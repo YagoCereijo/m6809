@@ -1,0 +1,50 @@
+
+Project made by:		/////////////////////////
+				//  ___  ___ ___       //
+Santiago Cereijo		// / __|/ __| _ )      //
+				// \__ \ (__| _ \      //
+18/5/2019			// |___/\___|___/ code //
+				//                     //
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+This is my first contact to assembler code, focused on the motorola 6809, a 16bits processor.
+
+Once the program is executed an option menu will be printed, giving 6 options
+
+ ============================================
+ |                                          |
+ | (1) INTRODUCIR MATRICES                  |  Introduce matrix will ask for two 3x3 matrix               
+ | (2) MOSTRAR MATRICES                     |  Show matrix
+ | (3) MULTIPLICAR FILAS                    |  Multiplies each of the elements of a row
+ | (4) SUMAR Y CALCULAR MEDIA DE FILAS      |  It will add every element of each row and show the average value
+ | (5) MULTIPLICAR MATRICES                 |  Multiplies the two matrix
+ | (6) SALIR                                |  Exits the program
+ |                                          |
+ ============================================   
+ 
+Each of the options and the output of the menu are programmed in diferent subroutines, except for exit which is already in the main 
+code.
+
+To build and run this program you will have to install asm6809 emulator or any other for the 6809
+
+This are the instructions:
+
+1-) as6809 -l -o _____.asm     
+
+	Do this for every single .asm in the folder and for each one a .rel is going to be created 
+	
+2-) aslink -s -m -w final.s19 xxxx.rel
+	
+	Add every .rel that has been generated to the instruction     
+
+3-) m6809-run final.s19 (Add a -d in the middle in case you want to enter debugger mode)
+
+	Runs the program
+	
+
+
+
+Credits to Ismael Castro
+
+
